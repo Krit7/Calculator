@@ -29,6 +29,7 @@ def calculate():
         db['Result'].append(result)
         return jsonify({'result':result})
     except:
+        print('err')
         return jsonify({'result':None})
 
 
